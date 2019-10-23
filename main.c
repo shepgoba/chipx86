@@ -88,7 +88,6 @@ int main(int argc, char *argv[]) {
         drawDisplay(&display, renderer);
         SDL_RenderPresent(renderer);
         SDL_Delay(1000/targetFrameRate);
-        executeInstructions(&cpu);
     }
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
