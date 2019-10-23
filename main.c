@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 #include <time.h>
 #include <SDL2/SDL.h>
 #include "cpu.h"
@@ -46,8 +47,8 @@ int main(int argc, char *argv[]) {
     initRAM(&ram);
     initDisplay(&display);
     initCPU(&cpu, &ram, &display);
-
-    SDL_Window *window = SDL_CreateWindow("CHIP8-PC Development Version", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 320, 0);
+    char *windowTitle = "CHIP8-PC Development Version 1";
+    SDL_Window *window = SDL_CreateWindow(windowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 320, 0);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     //clearScreen(&display);
     //uint8_t fontData[16][5];

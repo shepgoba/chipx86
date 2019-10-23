@@ -51,12 +51,17 @@ void executeInstructions(CHIP8_CPU *cpu) {
         uint8_t instructionArg3 = opCode & 0xf;
         uint16_t instructionArg1to3 = opCode & 0xfff;
         uint8_t instructionArg2to3 = opCode & 0xff;
+        #ifdef DEBUG
         printf("Will be executing instruction: 0x%x, PC = 0x%x\n", opCode, cpu->PC);
+        #endif
         if (instructionHeader == 0x0) {
             if (instructionArg3 == 0x0) { //CLS
                 clearScreen(cpu->displayPtr);
             } else if (instructionArg3 == 0xE) { //RET
                 //TODO
+                cpu->PC = cpu->STACK[cpu->SP];
+                cpu->SP--;
+                incrementPC = 0;
             }
         } else if (instructionHeader == 0x1) { //JMP
             cpu->PC = instructionArg1to3;
@@ -66,10 +71,9 @@ void executeInstructions(CHIP8_CPU *cpu) {
             cpu->STACK[cpu->SP] = cpu->PC;
             cpu->SP++;
             cpu->PC = instructionArg1to3;
+            incrementPC = 0;
         } else if (instructionHeader == 0x3) {
-            printf("V%x = %x, arg2to3 = %x\n", instructionArg1, *(cpu->regptr[instructionArg1]), instructionArg2to3);
             if (*(cpu->regptr[instructionArg1]) == instructionArg2to3) {
-                //printf("V%x = %x, arg2to3 = %x\n", instructionArg1, *(cpu->regptr[instructionArg1]), instructionArg2to3);
                 cpu->PC += 2;
             }
         } else if (instructionHeader == 0x4) {
@@ -163,7 +167,7 @@ void executeInstructions(CHIP8_CPU *cpu) {
             if (instructionArg3 == 0x7) {
                 *(cpu->regptr[instructionArg1]) = cpu->DT;
             } else if (instructionArg3 == 0xA) {
-                //wait for key press
+
             } else if (instructionArg2 == 1 && instructionArg3 == 0x5) {
                 cpu->DT = *(cpu->regptr[instructionArg1]);
             } else if (instructionArg3 == 0x8) {
@@ -171,7 +175,7 @@ void executeInstructions(CHIP8_CPU *cpu) {
             } else if (instructionArg3 == 0xE) {
                 cpu->I += *(cpu->regptr[instructionArg1]);
             } else if (instructionArg3 == 0x9) {
-
+                cpu->I = *(cpu->ramPtr->mem + 0x50 + instructionArg1*5);
             } else if (instructionArg3 == 0x3) {
 
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
