@@ -8,6 +8,8 @@
 #include "ram.h"
 #include "loadrom.h"
 #include "display.h"
+#include "input.h"
+
 /*
 Chip8-PC
 (wip)
@@ -18,6 +20,7 @@ References:
 http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#Annn
 https://stackoverflow.com
 */
+
 void cleanup(CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
     free(ram->mem);
 }
@@ -35,11 +38,13 @@ int main(int argc, char *argv[]) {
 
     FILE *romFile;
     uint16_t romFileSize;
+
     if (!(romFile = openROM(romFileName, &romFileSize))) {
-        return 1;
+        exit(-1);
     } else {
         printf("loaded rom successfully\n");
     }
+
     CHIP8_CPU cpu;
     CHIP8_DISPLAY display;
     CHIP8_RAM ram;
@@ -47,11 +52,11 @@ int main(int argc, char *argv[]) {
     initRAM(&ram);
     initDisplay(&display);
     initCPU(&cpu, &ram, &display);
+
     char *windowTitle = "CHIP8-PC Development Version 1";
     SDL_Window *window = SDL_CreateWindow(windowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 320, 0);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    //clearScreen(&display);
-    //uint8_t fontData[16][5];
+
     uint8_t fontData[16][5] = {
         {0xF0, 0x90, 0x90, 0x90, 0xF0}, //0
         {0x20, 0x60, 0x20, 0x20, 0x70}, //1
@@ -70,26 +75,31 @@ int main(int argc, char *argv[]) {
         {0xF0, 0x80, 0xF0, 0x80, 0xF0}, //E
         {0xF0, 0x80, 0xF0, 0x80, 0x80}, //F
     };
-    /* 0x50+80 bytes of interpreter RAM are 0-F fontset */
+
+    uint8_t keys[] = {};
+    /* 0x50+80 bytes of interpreter RAM are for the 0-F fontset */
     loadFontsetIntoRAM(fontData, &ram);
     loadProgramIntoRAM(romFile, &romFileSize, &ram);
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+
+    FILE *dump = fopen("debug-instruction-dump.txt", "w+");
     while (running) {
         SDL_Event e;
-        while(SDL_PollEvent( &e ))
-        {
-            if( e.type == SDL_QUIT )
-            {
+        while (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT) {
                 running = 0;
+            } else if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP) {
+                handleKeypress(&e, &cpu);
             }
         }
-        executeInstructions(&cpu);
+        executeInstructions(&cpu, dump);
         SDL_RenderClear(renderer);
         drawDisplay(&display, renderer);
         SDL_RenderPresent(renderer);
-        SDL_Delay(1000/targetFrameRate);
-        executeInstructions(&cpu);
+        delayTimer(&cpu);
+        SDL_Delay(1000 / targetFrameRate);
     }
+    fclose(dump);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     printf("exiting\n");

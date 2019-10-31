@@ -1,4 +1,9 @@
 #include <cpu.h>
+void delayTimer(CHIP8_CPU *cpu) {
+    if (cpu->DT != 0) {
+        cpu->DT--;
+    }
+}
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
     cpu->regptr[0] = &cpu->V0;
     cpu->regptr[1] = &cpu->V1;
@@ -22,54 +27,68 @@ void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
     cpu->displayPtr = display;
 }
 void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uint8_t *sprite) {
-    int oldX = x;
-    int oldY = y;
-    for (; y < oldY + spriteSize; y++) {
-        for (; x < oldX + 8; x++) {
-            uint8_t bitStatus = (*(sprite + (y - oldY)) >> (8 - (x - oldX))) & 1;
+    for (int spriteY = 0; spriteY < spriteSize; spriteY++) {
+        for (int spriteX = 0; spriteX < 8; spriteX++) {
+            uint8_t bitStatus = (*(sprite + spriteY) >> (8 - spriteX)) & 1;
+            uint8_t drawX, drawY;
             if (cpu->displayPtr->frameBuf[y][x] & bitStatus) {
                 cpu->VF = 1;
             } else {
                 cpu->VF = 0;
             }
-            cpu->displayPtr->frameBuf[y][x] = cpu->displayPtr->frameBuf[y][x] ^ bitStatus;
+            if (y+spriteY > 31) {
+                drawY = 0;
+            } else {
+                drawY = y+spriteY;
+            }
+            if (x+spriteX > 63) {
+                drawX = 0;
+            } else {
+                drawX = x+spriteX;
+            }
+            bitStatus ? printf("drawing pixel to: (%i, %i)\n", drawX, drawY) : NULL;
+            cpu->displayPtr->frameBuf[drawY][drawX] = cpu->displayPtr->frameBuf[drawY][drawX] ^ bitStatus;
         }
-        x = oldX;
     }
 }
-void executeInstructions(CHIP8_CPU *cpu) {
+#define DEBUG
+void executeInstructions(CHIP8_CPU *cpu, FILE *dump) {
     for (int cycles = 0; cycles <= 9; cycles++)
     {
+        static uint8_t *ram = cpu->ramPtr->mem;
+        
         uint8_t incrementPC = 1;
-
-        uint8_t *ram = cpu->ramPtr->mem;
-        uint16_t opcodeOffset = cpu->PC;
-        uint16_t opCode = (ram[opcodeOffset] << 8) + ram[opcodeOffset + 1];
-        uint8_t instructionHeader = (opCode >> 12) & 0xf;
-        uint8_t instructionArg1 = (opCode >> 8) & 0xf;
-        uint8_t instructionArg2 = (opCode >> 4) & 0xf;
-        uint8_t instructionArg3 = opCode & 0xf;
-        uint16_t instructionArg1to3 = opCode & 0xfff;
-        uint8_t instructionArg2to3 = opCode & 0xff;
+        uint16_t opcode = (ram[cpu->PC] << 8) + ram[cpu->PC + 1];
+        if (cpu->PC+1 > 4095) {
+            exit(-1);
+        }
+        uint8_t instructionHeader = (opcode >> 12) & 0xf;
+        uint8_t instructionArg1 = (opcode >> 8) & 0xf;
+        uint8_t instructionArg2 = (opcode >> 4) & 0xf;
+        uint8_t instructionArg3 = opcode & 0xf;
+        uint16_t instructionArg1to3 = opcode & 0xfff;
+        uint8_t instructionArg2to3 = opcode & 0xff;
         #ifdef DEBUG
-        printf("Will be executing instruction: 0x%x, PC = 0x%x\n", opCode, cpu->PC);
+        fprintf(dump, "**************\n");
+        fprintf(dump, "Will be executing instruction: 0x%02x, PC = 0x%x\n", opcode, cpu->PC);
+        fprintf(dump, "DEBUG: %x,%x,%x,%x\n", instructionHeader, instructionArg1, instructionArg2, instructionArg3);
+        fprintf(dump, "**************\n");
         #endif
-        if (instructionHeader == 0x0) {
-            if (instructionArg3 == 0x0) { //CLS
+
+        if (instructionHeader == 0x0 && opcode <= 255) {
+            if (instructionArg3 == 0x0) {
                 clearScreen(cpu->displayPtr);
-            } else if (instructionArg3 == 0xE) { //RET
-                //TODO
+            } else if (instructionArg3 == 0xE) {
                 cpu->PC = cpu->STACK[cpu->SP];
                 cpu->SP--;
                 incrementPC = 0;
             }
-        } else if (instructionHeader == 0x1) { //JMP
+        } else if (instructionHeader == 0x1) {
             cpu->PC = instructionArg1to3;
             incrementPC = 0;
         } else if (instructionHeader == 0x2) {
-            //increment stack pointer, put the current PC on top of stack, PC Set to 2nnn
-            cpu->STACK[cpu->SP] = cpu->PC;
             cpu->SP++;
+            cpu->STACK[cpu->SP] = cpu->PC;
             cpu->PC = instructionArg1to3;
             incrementPC = 0;
         } else if (instructionHeader == 0x3) {
@@ -155,11 +174,15 @@ void executeInstructions(CHIP8_CPU *cpu) {
             free(sprite);
         } else if (instructionHeader == 0xE) {
             if (instructionArg3 == 0xE) {
+                printf("RUNNING INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if ((cpu->KEY[instructionArg1])) {
+                    printf("skipping instr");
                     cpu->PC += 2;
                 }
             } else if (instructionArg3 == 0x1) {
+                printf("RUNNING 2 INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if (!(cpu->KEY[instructionArg1])) {
+                    printf("skipping instr 2");
                     cpu->PC += 2;
                 }
             }
@@ -177,7 +200,13 @@ void executeInstructions(CHIP8_CPU *cpu) {
             } else if (instructionArg3 == 0x9) {
                 cpu->I = *(cpu->ramPtr->mem + 0x50 + instructionArg1*5);
             } else if (instructionArg3 == 0x3) {
-
+                uint8_t regValue = *(cpu->regptr[instructionArg1]);
+                uint8_t ones = regValue % 10;
+                uint8_t tens = (regValue / 10) % 10;
+                uint8_t hundreds = (regValue / 100) % 10;
+                *(cpu->ramPtr->mem + cpu->I) = hundreds;
+                *(cpu->ramPtr->mem + cpu->I + 1) = tens;
+                *(cpu->ramPtr->mem + cpu->I + 2) = ones;
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
                 for (int i = 0; i < 0xF; i++) {
                     *(cpu->ramPtr->mem + cpu->I + i) = *(cpu->regptr[i]);
@@ -192,6 +221,86 @@ void executeInstructions(CHIP8_CPU *cpu) {
             cpu->PC+=2;
     }
 }
-void parseOpcode(CHIP8_CPU *cpu, CHIP8_DISPLAY *display, uint16_t instruction) {
-    printf("%x\n", instruction);
-}
+/*
+**************
+Will be executing instruction: 0x6a02, PC = 0x200
+DEBUG: 6,a,0,2
+**************
+**************
+Will be executing instruction: 0x6b0c, PC = 0x202
+DEBUG: 6,b,0,c
+**************
+**************
+Will be executing instruction: 0x6c3f, PC = 0x204
+DEBUG: 6,c,3,f
+**************
+**************
+Will be executing instruction: 0x6d0c, PC = 0x206
+DEBUG: 6,d,0,c
+**************
+**************
+Will be executing instruction: 0xa2ea, PC = 0x208
+DEBUG: a,2,e,a
+**************
+**************
+Will be executing instruction: 0xdab6, PC = 0x20a
+DEBUG: d,a,b,6
+**************
+**************
+Will be executing instruction: 0xdcd6, PC = 0x20c
+DEBUG: d,c,d,6
+**************
+**************
+Will be executing instruction: 0x6e00, PC = 0x20e
+DEBUG: 6,e,0,0
+**************
+**************
+Will be executing instruction: 0x22d4, PC = 0x210
+DEBUG: 2,2,d,4
+**************
+**************
+Will be executing instruction: 0xa2f2, PC = 0x2d4
+DEBUG: a,2,f,2
+**************
+**************
+Will be executing instruction: 0xfe33, PC = 0x2d6
+DEBUG: f,e,3,3
+**************
+**************
+Will be executing instruction: 0xf265, PC = 0x2d8
+DEBUG: f,2,6,5
+**************
+**************
+Will be executing instruction: 0xf129, PC = 0x2da
+DEBUG: f,1,2,9
+**************
+**************
+Will be executing instruction: 0x6414, PC = 0x2dc
+DEBUG: 6,4,1,4
+**************
+**************
+Will be executing instruction: 0x6500, PC = 0x2de
+DEBUG: 6,5,0,0
+**************
+**************
+Will be executing instruction: 0xd455, PC = 0x2e0
+DEBUG: d,4,5,5
+**************
+**************
+Will be executing instruction: 0x7415, PC = 0x2e2
+DEBUG: 7,4,1,5
+**************
+**************
+Will be executing instruction: 0xf229, PC = 0x2e4
+DEBUG: f,2,2,9
+**************
+**************
+Will be executing instruction: 0xd455, PC = 0x2e6
+DEBUG: d,4,5,5
+**************
+**************
+Will be executing instruction: 0xee, PC = 0x2e8
+DEBUG: 0,0,e,e
+**************
+**************
+*/

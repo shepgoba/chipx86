@@ -10,12 +10,15 @@ typedef struct {
     uint8_t DT, ST; // Delay timer, sound timer
     uint16_t SP; //Stack pointer (points to top of the stack)
     uint16_t PC; // Program counter
-    uint16_t I;
+    uint16_t I; //Multi use register
     uint16_t STACK[24]; // Stack
     uint8_t KEY[16];
+
+    // Abstractions for interpreter
     CHIP8_RAM *ramPtr;
     CHIP8_DISPLAY *displayPtr;
 } CHIP8_CPU;
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display);
-void executeInstructions(CHIP8_CPU *cpu);
+void executeInstructions(CHIP8_CPU *cpu, FILE *dump);
+void delayTimer(CHIP8_CPU *cpu);
 #endif
