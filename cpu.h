@@ -11,7 +11,7 @@ typedef struct {
     uint16_t SP; //Stack pointer (points to top of the stack)
     uint16_t PC; // Program counter
     uint16_t I; //Multi use register
-    uint16_t STACK[24]; // Stack
+    uint16_t STACK[16]; // Stack
     uint8_t KEY[16];
 
     // Abstractions for interpreter

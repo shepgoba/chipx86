@@ -108,7 +108,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
     SDL_RenderPresent(renderer);
     //printf("drawing frame: %i\n", cpu->displayPtr->frameCount);
 }
-#define DEBUG
+//#define DEBUG
 void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
     uint8_t *ram = cpu->ramPtr->mem;
 
@@ -135,7 +135,15 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
         fprintf(dump, "DEBUG: %x,%x,%x,%x\n", instructionHeader, instructionArg1, instructionArg2, instructionArg3);
         fprintf(dump, "**************\n");
         #endif*/
-
+        #ifdef DEBUG
+        fprintf(dump2, "0x%02x, PC = 0x%x\n", opcode, cpu->PC);
+        for (int i = 0; i < 16; i++) {
+            //fprintf(dump2, "V%x: %i, ", i, cpu->reg[i]);
+        }
+        fprintf(dump2, "I: %x", cpu->I);
+        fprintf(dump2, "\n");
+        fprintf(dump2, "\n");
+        #endif
         if (instructionHeader == 0x0 && opcode <= 255) {
             if (instructionArg3 == 0x0) {
                 clearScreen(cpu->displayPtr);
@@ -149,7 +157,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
             continue;
         } else if (instructionHeader == 0x2) {
             cpu->SP++;
-            cpu->STACK[cpu->SP] = cpu->PC;
+            cpu->STACK[cpu->SP] = cpu->PC + 2;
             cpu->PC = instructionArg1to3;
             continue;
         } else if (instructionHeader == 0x3) {
@@ -244,16 +252,16 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
             free(sprite);
         } else if (instructionHeader == 0xE) {
             if (instructionArg3 == 0xE) {
-                printf("RUNNING INSTRUCTION WITH ARG1: %i", instructionArg1);
+                //printf("RUNNING INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if ((cpu->KEY[cpu->reg[instructionArg1]])) {
-                    printf("skipping instr");
+                    //printf("skipping instr");
                     cpu->PC += 4;
                     continue;
                 }
             } else if (instructionArg3 == 0x1) {
-                printf("RUNNING 2 INSTRUCTION WITH ARG1: %i", instructionArg1);
+                //printf("RUNNING 2 INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if (!(cpu->KEY[cpu->reg[instructionArg1]])) {
-                    printf("skipping instr 2");
+                    //printf("skipping instr 2");
                     cpu->PC += 4;
                     continue;
                 }
@@ -282,24 +290,16 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                 cpu->ramPtr->mem[cpu->I + 2] = ones;
                 //printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
-                for (int i = 0; i < 0xF; i++) {
+                for (int i = 0; i < instructionArg1; i++) {
                     cpu->ramPtr->mem[cpu->I + i] = cpu->reg[i];
                 }
             } else if (instructionArg2 == 6 && instructionArg3 == 0x5) {
-                for (int i = 0; i < 0xF; i++) {
+                for (int i = 0; i < instructionArg1; i++) {
                     cpu->reg[i] = cpu->ramPtr->mem[cpu->I + i];
                 }
             }
         }
-        #ifdef DEBUG
-        fprintf(dump2, "0x%02x, PC = 0x%x\n", opcode, cpu->PC);
-        for (int i = 0; i < 16; i++) {
-            fprintf(dump2, "V%x: %i, ", i, cpu->reg[i]);
-        }
-        fprintf(dump2, "I: %x", cpu->I);
-        fprintf(dump2, "\n");
-        fprintf(dump2, "\n");
-        #endif
+
         cpu->PC += 2;
     }
 }
