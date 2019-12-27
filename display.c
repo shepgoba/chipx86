@@ -24,6 +24,9 @@ void drawDisplay(CHIP8_DISPLAY *display) {
                 rect.y = 10*y;
                 SDL_RenderFillRect(display->renderer, &rect);
             }
+            #ifdef DEBUG
+            debugDrawKeys(display);
+            #endif
         }
     }
     SDL_SetRenderDrawColor(display->renderer, 0, 0, 0, 255);

@@ -22,7 +22,7 @@ http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#Annn
 https://stackoverflow.com
 */
 
-
+#define DEBUG
 int main(int argc, char *argv[]) {
     uint8_t running = 1;
     const int targetFrameRate = 60;
@@ -87,6 +87,7 @@ int main(int argc, char *argv[]) {
                 running = 0;
             } else if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP) {
                 handleKeypress(&e, &cpu);
+
             }
         }
         executeInstructions(&cpu, dump, dump2);

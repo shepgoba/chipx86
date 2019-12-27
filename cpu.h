@@ -21,4 +21,5 @@ typedef struct {
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display);
 void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2);
 void delayTimer(CHIP8_CPU *cpu);
+void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display);
 #endif

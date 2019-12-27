@@ -4,6 +4,42 @@ void delayTimer(CHIP8_CPU *cpu) {
         cpu->DT--;
     }
 }
+static void dumpRamToFile(CHIP8_CPU *cpu) {
+    FILE *file = fopen("ramdump.bin", "wb+");
+    fwrite(cpu->ramPtr->mem, 1, 4096, file);
+    fclose(file);
+}
+void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display) {
+    static SDL_Rect rect;
+    rect.w = 10;
+    rect.h = 10;
+    rect.y = 10;
+    for (int k = 0; k < 0xF; k++) {
+        if (cpu->KEY[k]) {
+            //rect.x = 10*k;
+            cpu->displayPtr->frameBuf[0][k] ^= 1;
+            //drawDisplay(cpu->displayPtr);
+        } else {
+            cpu->displayPtr->frameBuf[0][k] ^= 0;
+        }
+    }
+}
+
+static uint8_t getSingularKeyPress(CHIP8_CPU *cpu) {
+    int key = 0;
+    int i = 0;
+    for (;;) {
+        if (cpu->KEY[i]) {
+            return i;
+        }
+        i++;
+        if (i >= 0xF) {
+            i = 0;
+        }
+    }
+    return 0;
+}
+
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
     for (int i = 0; i < 0xF; i++) {
         cpu->reg[i] = 0;
@@ -34,6 +70,7 @@ void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
   (byte & 0x01 ? '1' : '0') 
 
 void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uint8_t *sprite) {
+    uint8_t pixelsErased = 0;
     for (int spriteY = 0; spriteY < spriteSize; spriteY++) {
         for (int spriteX = 0; spriteX < 8; spriteX++) {
             uint8_t bitStatus = (*(sprite + spriteY) >> (7 - spriteX)) & 1;
@@ -52,15 +89,18 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
                 drawX = x+spriteX;
             }
             //printf("draw: (%i, %i)\n", drawX, drawY);
-            if (cpu->displayPtr->frameBuf[drawY][drawX] & bitStatus) {
-                *(cpu->VF) = 1;
-            } else {
-                *(cpu->VF) = 0;
+            if (!pixelsErased) {
+                if (cpu->displayPtr->frameBuf[drawY][drawX] & bitStatus) {
+                    *(cpu->VF) = 1;
+                    pixelsErased = 1;
+                }
             }
             //if (bitStatus) printf("drawing pixel to: (%i, %i)\n", drawX, drawY);
             cpu->displayPtr->frameBuf[drawY][drawX] ^= bitStatus;
         }
     }
+    if (!pixelsErased)
+        *(cpu->VF) = 0;
     cpu->displayPtr->frameCount++;
     SDL_Renderer *renderer = cpu->displayPtr->renderer;
     SDL_RenderClear(renderer);
@@ -75,7 +115,9 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
     for (int cycles = 0; cycles <= 9; cycles++)
     {
         uint16_t opcode = (ram[cpu->PC] << 8) | ram[cpu->PC + 1];
-        
+        #ifdef DEBUG
+        debugDrawKeys(cpu, cpu->displayPtr);
+        #endif
         // If PC goes over ram, abort the program
         if (cpu->PC+1 > 4095) {
             exit(-1);
@@ -147,12 +189,12 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                     *(cpu->VF) = 0;
                 }
             } else if (instructionArg3 == 0x5) {
-                cpu->reg[instructionArg1] -= cpu->reg[instructionArg2];
                 if (cpu->reg[instructionArg1] > cpu->reg[instructionArg2]) {
                     *(cpu->VF) = 1;
                 } else {
                     *(cpu->VF) = 0;
                 }
+                cpu->reg[instructionArg1] -= cpu->reg[instructionArg2];
             } else if (instructionArg3 == 0x6) {
                 if (cpu->reg[instructionArg1] & 0b00000001) {
                     *(cpu->VF) = 1;
@@ -220,7 +262,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
             if (instructionArg3 == 0x7) {
                 cpu->reg[instructionArg1] = cpu->DT;
             } else if (instructionArg3 == 0xA) {
-
+                cpu->reg[instructionArg1] = getSingularKeyPress(cpu);
             } else if (instructionArg2 == 1 && instructionArg3 == 0x5) {
                 cpu->DT = cpu->reg[instructionArg1];
             } else if (instructionArg3 == 0x8) {
@@ -238,7 +280,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                 cpu->ramPtr->mem[cpu->I] = hundreds;
                 cpu->ramPtr->mem[cpu->I + 1] = tens;
                 cpu->ramPtr->mem[cpu->I + 2] = ones;
-                printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
+                //printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
                 for (int i = 0; i < 0xF; i++) {
                     cpu->ramPtr->mem[cpu->I + i] = cpu->reg[i];
