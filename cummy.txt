@@ -1,0 +1,642 @@
+loaded rom successfully
+oofdrawing pixel to: (3, 0)
+drawing pixel to: (2, 1)
+drawing pixel to: (1, 2)
+drawing pixel to: (4, 3)
+drawing frame: 1
+drawing pixel to: (7, 0)
+drawing pixel to: (6, 1)
+drawing pixel to: (5, 2)
+drawing pixel to: (8, 3)
+drawing frame: 2
+drawing pixel to: (11, 0)
+drawing pixel to: (10, 1)
+drawing pixel to: (9, 2)
+drawing pixel to: (12, 3)
+drawing frame: 3
+drawing pixel to: (15, 0)
+drawing pixel to: (14, 1)
+drawing pixel to: (13, 2)
+drawing pixel to: (16, 3)
+drawing frame: 4
+drawing pixel to: (17, 0)
+drawing pixel to: (18, 1)
+drawing pixel to: (19, 2)
+drawing pixel to: (20, 3)
+drawing frame: 5
+drawing pixel to: (21, 0)
+drawing pixel to: (22, 1)
+drawing pixel to: (23, 2)
+drawing pixel to: (24, 3)
+drawing frame: 6
+drawing pixel to: (27, 0)
+drawing pixel to: (26, 1)
+drawing pixel to: (25, 2)
+drawing pixel to: (28, 3)
+drawing frame: 7
+drawing pixel to: (29, 0)
+drawing pixel to: (30, 1)
+drawing pixel to: (31, 2)
+drawing pixel to: (32, 3)
+drawing frame: 8
+drawing pixel to: (33, 0)
+drawing pixel to: (34, 1)
+drawing pixel to: (35, 2)
+drawing pixel to: (36, 3)
+drawing frame: 9
+drawing pixel to: (37, 0)
+drawing pixel to: (38, 1)
+drawing pixel to: (39, 2)
+drawing pixel to: (40, 3)
+drawing frame: 10
+drawing pixel to: (41, 0)
+drawing pixel to: (42, 1)
+drawing pixel to: (43, 2)
+drawing pixel to: (44, 3)
+drawing frame: 11
+drawing pixel to: (47, 0)
+drawing pixel to: (46, 1)
+drawing pixel to: (45, 2)
+drawing pixel to: (48, 3)
+drawing frame: 12
+drawing pixel to: (51, 0)
+drawing pixel to: (50, 1)
+drawing pixel to: (49, 2)
+drawing pixel to: (52, 3)
+drawing frame: 13
+drawing pixel to: (53, 0)
+drawing pixel to: (54, 1)
+drawing pixel to: (55, 2)
+drawing pixel to: (56, 3)
+drawing frame: 14
+drawing pixel to: (57, 0)
+drawing pixel to: (58, 1)
+drawing pixel to: (59, 2)
+drawing pixel to: (60, 3)
+drawing frame: 15
+drawing pixel to: (61, 0)
+drawing pixel to: (62, 1)
+drawing pixel to: (63, 2)
+drawing pixel to: (0, 3)
+drawing frame: 16
+drawing pixel to: (1, 4)
+drawing pixel to: (2, 5)
+drawing pixel to: (3, 6)
+drawing pixel to: (4, 7)
+drawing frame: 17
+drawing pixel to: (7, 4)
+drawing pixel to: (6, 5)
+drawing pixel to: (5, 6)
+drawing pixel to: (8, 7)
+drawing frame: 18
+drawing pixel to: (9, 4)
+drawing pixel to: (10, 5)
+drawing pixel to: (11, 6)
+drawing pixel to: (12, 7)
+drawing frame: 19
+drawing pixel to: (13, 4)
+drawing pixel to: (14, 5)
+drawing pixel to: (15, 6)
+drawing pixel to: (16, 7)
+drawing frame: 20
+drawing pixel to: (17, 4)
+drawing pixel to: (18, 5)
+drawing pixel to: (19, 6)
+drawing pixel to: (20, 7)
+drawing frame: 21
+drawing pixel to: (23, 4)
+drawing pixel to: (22, 5)
+drawing pixel to: (21, 6)
+drawing pixel to: (24, 7)
+drawing frame: 22
+drawing pixel to: (27, 4)
+drawing pixel to: (26, 5)
+drawing pixel to: (25, 6)
+drawing pixel to: (28, 7)
+drawing frame: 23
+drawing pixel to: (29, 4)
+drawing pixel to: (30, 5)
+drawing pixel to: (31, 6)
+drawing pixel to: (32, 7)
+drawing frame: 24
+drawing pixel to: (33, 4)
+drawing pixel to: (34, 5)
+drawing pixel to: (35, 6)
+drawing pixel to: (36, 7)
+drawing frame: 25
+drawing pixel to: (37, 4)
+drawing pixel to: (38, 5)
+drawing pixel to: (39, 6)
+drawing pixel to: (40, 7)
+drawing frame: 26
+drawing pixel to: (41, 4)
+drawing pixel to: (42, 5)
+drawing pixel to: (43, 6)
+drawing pixel to: (44, 7)
+drawing frame: 27
+drawing pixel to: (47, 4)
+drawing pixel to: (46, 5)
+drawing pixel to: (45, 6)
+drawing pixel to: (48, 7)
+drawing frame: 28
+drawing pixel to: (49, 4)
+drawing pixel to: (50, 5)
+drawing pixel to: (51, 6)
+drawing pixel to: (52, 7)
+drawing frame: 29
+drawing pixel to: (55, 4)
+drawing pixel to: (54, 5)
+drawing pixel to: (53, 6)
+drawing pixel to: (56, 7)
+drawing frame: 30
+drawing pixel to: (59, 4)
+drawing pixel to: (58, 5)
+drawing pixel to: (57, 6)
+drawing pixel to: (60, 7)
+drawing frame: 31
+drawing pixel to: (61, 4)
+drawing pixel to: (62, 5)
+drawing pixel to: (63, 6)
+drawing pixel to: (0, 7)
+drawing frame: 32
+drawing pixel to: (1, 8)
+drawing pixel to: (2, 9)
+drawing pixel to: (3, 10)
+drawing pixel to: (4, 11)
+drawing frame: 33
+drawing pixel to: (5, 8)
+drawing pixel to: (6, 9)
+drawing pixel to: (7, 10)
+drawing pixel to: (8, 11)
+drawing frame: 34
+drawing pixel to: (11, 8)
+drawing pixel to: (10, 9)
+drawing pixel to: (9, 10)
+drawing pixel to: (12, 11)
+drawing frame: 35
+drawing pixel to: (13, 8)
+drawing pixel to: (14, 9)
+drawing pixel to: (15, 10)
+drawing pixel to: (16, 11)
+drawing frame: 36
+drawing pixel to: (19, 8)
+drawing pixel to: (18, 9)
+drawing pixel to: (17, 10)
+drawing pixel to: (20, 11)
+drawing frame: 37
+drawing pixel to: (21, 8)
+drawing pixel to: (22, 9)
+drawing pixel to: (23, 10)
+drawing pixel to: (24, 11)
+drawing frame: 38
+drawing pixel to: (25, 8)
+drawing pixel to: (26, 9)
+drawing pixel to: (27, 10)
+drawing pixel to: (28, 11)
+drawing frame: 39
+drawing pixel to: (31, 8)
+drawing pixel to: (30, 9)
+drawing pixel to: (29, 10)
+drawing pixel to: (32, 11)
+drawing frame: 40
+drawing pixel to: (35, 8)
+drawing pixel to: (34, 9)
+drawing pixel to: (33, 10)
+drawing pixel to: (36, 11)
+drawing frame: 41
+drawing pixel to: (39, 8)
+drawing pixel to: (38, 9)
+drawing pixel to: (37, 10)
+drawing pixel to: (40, 11)
+drawing frame: 42
+drawing pixel to: (41, 8)
+drawing pixel to: (42, 9)
+drawing pixel to: (43, 10)
+drawing pixel to: (44, 11)
+drawing frame: 43
+drawing pixel to: (45, 8)
+drawing pixel to: (46, 9)
+drawing pixel to: (47, 10)
+drawing pixel to: (48, 11)
+drawing frame: 44
+drawing pixel to: (51, 8)
+drawing pixel to: (50, 9)
+drawing pixel to: (49, 10)
+drawing pixel to: (52, 11)
+drawing frame: 45
+drawing pixel to: (55, 8)
+drawing pixel to: (54, 9)
+drawing pixel to: (53, 10)
+drawing pixel to: (56, 11)
+drawing frame: 46
+drawing pixel to: (57, 8)
+drawing pixel to: (58, 9)
+drawing pixel to: (59, 10)
+drawing pixel to: (60, 11)
+drawing frame: 47
+drawing pixel to: (61, 8)
+drawing pixel to: (62, 9)
+drawing pixel to: (63, 10)
+drawing pixel to: (0, 11)
+drawing frame: 48
+drawing pixel to: (1, 12)
+drawing pixel to: (2, 13)
+drawing pixel to: (3, 14)
+drawing pixel to: (4, 15)
+drawing frame: 49
+drawing pixel to: (7, 12)
+drawing pixel to: (6, 13)
+drawing pixel to: (5, 14)
+drawing pixel to: (8, 15)
+drawing frame: 50
+drawing pixel to: (11, 12)
+drawing pixel to: (10, 13)
+drawing pixel to: (9, 14)
+drawing pixel to: (12, 15)
+drawing frame: 51
+drawing pixel to: (15, 12)
+drawing pixel to: (14, 13)
+drawing pixel to: (13, 14)
+drawing pixel to: (16, 15)
+drawing frame: 52
+drawing pixel to: (19, 12)
+drawing pixel to: (18, 13)
+drawing pixel to: (17, 14)
+drawing pixel to: (20, 15)
+drawing frame: 53
+drawing pixel to: (23, 12)
+drawing pixel to: (22, 13)
+drawing pixel to: (21, 14)
+drawing pixel to: (24, 15)
+drawing frame: 54
+drawing pixel to: (27, 12)
+drawing pixel to: (26, 13)
+drawing pixel to: (25, 14)
+drawing pixel to: (28, 15)
+drawing frame: 55
+drawing pixel to: (29, 12)
+drawing pixel to: (30, 13)
+drawing pixel to: (31, 14)
+drawing pixel to: (32, 15)
+drawing frame: 56
+drawing pixel to: (33, 12)
+drawing pixel to: (34, 13)
+drawing pixel to: (35, 14)
+drawing pixel to: (36, 15)
+drawing frame: 57
+drawing pixel to: (37, 12)
+drawing pixel to: (38, 13)
+drawing pixel to: (39, 14)
+drawing pixel to: (40, 15)
+drawing frame: 58
+drawing pixel to: (43, 12)
+drawing pixel to: (42, 13)
+drawing pixel to: (41, 14)
+drawing pixel to: (44, 15)
+drawing frame: 59
+drawing pixel to: (47, 12)
+drawing pixel to: (46, 13)
+drawing pixel to: (45, 14)
+drawing pixel to: (48, 15)
+drawing frame: 60
+drawing pixel to: (51, 12)
+drawing pixel to: (50, 13)
+drawing pixel to: (49, 14)
+drawing pixel to: (52, 15)
+drawing frame: 61
+drawing pixel to: (53, 12)
+drawing pixel to: (54, 13)
+drawing pixel to: (55, 14)
+drawing pixel to: (56, 15)
+drawing frame: 62
+drawing pixel to: (57, 12)
+drawing pixel to: (58, 13)
+drawing pixel to: (59, 14)
+drawing pixel to: (60, 15)
+drawing frame: 63
+drawing pixel to: (63, 12)
+drawing pixel to: (62, 13)
+drawing pixel to: (61, 14)
+drawing pixel to: (0, 15)
+drawing frame: 64
+drawing pixel to: (3, 16)
+drawing pixel to: (2, 17)
+drawing pixel to: (1, 18)
+drawing pixel to: (4, 19)
+drawing frame: 65
+drawing pixel to: (5, 16)
+drawing pixel to: (6, 17)
+drawing pixel to: (7, 18)
+drawing pixel to: (8, 19)
+drawing frame: 66
+drawing pixel to: (9, 16)
+drawing pixel to: (10, 17)
+drawing pixel to: (11, 18)
+drawing pixel to: (12, 19)
+drawing frame: 67
+drawing pixel to: (13, 16)
+drawing pixel to: (14, 17)
+drawing pixel to: (15, 18)
+drawing pixel to: (16, 19)
+drawing frame: 68
+drawing pixel to: (19, 16)
+drawing pixel to: (18, 17)
+drawing pixel to: (17, 18)
+drawing pixel to: (20, 19)
+drawing frame: 69
+drawing pixel to: (23, 16)
+drawing pixel to: (22, 17)
+drawing pixel to: (21, 18)
+drawing pixel to: (24, 19)
+drawing frame: 70
+drawing pixel to: (27, 16)
+drawing pixel to: (26, 17)
+drawing pixel to: (25, 18)
+drawing pixel to: (28, 19)
+drawing frame: 71
+drawing pixel to: (31, 16)
+drawing pixel to: (30, 17)
+drawing pixel to: (29, 18)
+drawing pixel to: (32, 19)
+drawing frame: 72
+drawing pixel to: (33, 16)
+drawing pixel to: (34, 17)
+drawing pixel to: (35, 18)
+drawing pixel to: (36, 19)
+drawing frame: 73
+drawing pixel to: (37, 16)
+drawing pixel to: (38, 17)
+drawing pixel to: (39, 18)
+drawing pixel to: (40, 19)
+drawing frame: 74
+drawing pixel to: (41, 16)
+drawing pixel to: (42, 17)
+drawing pixel to: (43, 18)
+drawing pixel to: (44, 19)
+drawing frame: 75
+drawing pixel to: (47, 16)
+drawing pixel to: (46, 17)
+drawing pixel to: (45, 18)
+drawing pixel to: (48, 19)
+drawing frame: 76
+drawing pixel to: (51, 16)
+drawing pixel to: (50, 17)
+drawing pixel to: (49, 18)
+drawing pixel to: (52, 19)
+drawing frame: 77
+drawing pixel to: (53, 16)
+drawing pixel to: (54, 17)
+drawing pixel to: (55, 18)
+drawing pixel to: (56, 19)
+drawing frame: 78
+drawing pixel to: (59, 16)
+drawing pixel to: (58, 17)
+drawing pixel to: (57, 18)
+drawing pixel to: (60, 19)
+drawing frame: 79
+drawing pixel to: (61, 16)
+drawing pixel to: (62, 17)
+drawing pixel to: (63, 18)
+drawing pixel to: (0, 19)
+drawing frame: 80
+drawing pixel to: (1, 20)
+drawing pixel to: (2, 21)
+drawing pixel to: (3, 22)
+drawing pixel to: (4, 23)
+drawing frame: 81
+drawing pixel to: (7, 20)
+drawing pixel to: (6, 21)
+drawing pixel to: (5, 22)
+drawing pixel to: (8, 23)
+drawing frame: 82
+drawing pixel to: (11, 20)
+drawing pixel to: (10, 21)
+drawing pixel to: (9, 22)
+drawing pixel to: (12, 23)
+drawing frame: 83
+drawing pixel to: (15, 20)
+drawing pixel to: (14, 21)
+drawing pixel to: (13, 22)
+drawing pixel to: (16, 23)
+drawing frame: 84
+drawing pixel to: (17, 20)
+drawing pixel to: (18, 21)
+drawing pixel to: (19, 22)
+drawing pixel to: (20, 23)
+drawing frame: 85
+drawing pixel to: (21, 20)
+drawing pixel to: (22, 21)
+drawing pixel to: (23, 22)
+drawing pixel to: (24, 23)
+drawing frame: 86
+drawing pixel to: (27, 20)
+drawing pixel to: (26, 21)
+drawing pixel to: (25, 22)
+drawing pixel to: (28, 23)
+drawing frame: 87
+drawing pixel to: (29, 20)
+drawing pixel to: (30, 21)
+drawing pixel to: (31, 22)
+drawing pixel to: (32, 23)
+drawing frame: 88
+drawing pixel to: (33, 20)
+drawing pixel to: (34, 21)
+drawing pixel to: (35, 22)
+drawing pixel to: (36, 23)
+drawing frame: 89
+drawing pixel to: (37, 20)
+drawing pixel to: (38, 21)
+drawing pixel to: (39, 22)
+drawing pixel to: (40, 23)
+drawing frame: 90
+drawing pixel to: (41, 20)
+drawing pixel to: (42, 21)
+drawing pixel to: (43, 22)
+drawing pixel to: (44, 23)
+drawing frame: 91
+drawing pixel to: (45, 20)
+drawing pixel to: (46, 21)
+drawing pixel to: (47, 22)
+drawing pixel to: (48, 23)
+drawing frame: 92
+drawing pixel to: (51, 20)
+drawing pixel to: (50, 21)
+drawing pixel to: (49, 22)
+drawing pixel to: (52, 23)
+drawing frame: 93
+drawing pixel to: (53, 20)
+drawing pixel to: (54, 21)
+drawing pixel to: (55, 22)
+drawing pixel to: (56, 23)
+drawing frame: 94
+drawing pixel to: (59, 20)
+drawing pixel to: (58, 21)
+drawing pixel to: (57, 22)
+drawing pixel to: (60, 23)
+drawing frame: 95
+drawing pixel to: (61, 20)
+drawing pixel to: (62, 21)
+drawing pixel to: (63, 22)
+drawing pixel to: (0, 23)
+drawing frame: 96
+drawing pixel to: (3, 24)
+drawing pixel to: (2, 25)
+drawing pixel to: (1, 26)
+drawing pixel to: (4, 27)
+drawing frame: 97
+drawing pixel to: (7, 24)
+drawing pixel to: (6, 25)
+drawing pixel to: (5, 26)
+drawing pixel to: (8, 27)
+drawing frame: 98
+drawing pixel to: (11, 24)
+drawing pixel to: (10, 25)
+drawing pixel to: (9, 26)
+drawing pixel to: (12, 27)
+drawing frame: 99
+drawing pixel to: (15, 24)
+drawing pixel to: (14, 25)
+drawing pixel to: (13, 26)
+drawing pixel to: (16, 27)
+drawing frame: 100
+drawing pixel to: (17, 24)
+drawing pixel to: (18, 25)
+drawing pixel to: (19, 26)
+drawing pixel to: (20, 27)
+drawing frame: 101
+drawing pixel to: (21, 24)
+drawing pixel to: (22, 25)
+drawing pixel to: (23, 26)
+drawing pixel to: (24, 27)
+drawing frame: 102
+drawing pixel to: (27, 24)
+drawing pixel to: (26, 25)
+drawing pixel to: (25, 26)
+drawing pixel to: (28, 27)
+drawing frame: 103
+drawing pixel to: (29, 24)
+drawing pixel to: (30, 25)
+drawing pixel to: (31, 26)
+drawing pixel to: (32, 27)
+drawing frame: 104
+drawing pixel to: (35, 24)
+drawing pixel to: (34, 25)
+drawing pixel to: (33, 26)
+drawing pixel to: (36, 27)
+drawing frame: 105
+drawing pixel to: (39, 24)
+drawing pixel to: (38, 25)
+drawing pixel to: (37, 26)
+drawing pixel to: (40, 27)
+drawing frame: 106
+drawing pixel to: (41, 24)
+drawing pixel to: (42, 25)
+drawing pixel to: (43, 26)
+drawing pixel to: (44, 27)
+drawing frame: 107
+drawing pixel to: (47, 24)
+drawing pixel to: (46, 25)
+drawing pixel to: (45, 26)
+drawing pixel to: (48, 27)
+drawing frame: 108
+drawing pixel to: (51, 24)
+drawing pixel to: (50, 25)
+drawing pixel to: (49, 26)
+drawing pixel to: (52, 27)
+drawing frame: 109
+drawing pixel to: (55, 24)
+drawing pixel to: (54, 25)
+drawing pixel to: (53, 26)
+drawing pixel to: (56, 27)
+drawing frame: 110
+drawing pixel to: (57, 24)
+drawing pixel to: (58, 25)
+drawing pixel to: (59, 26)
+drawing pixel to: (60, 27)
+drawing frame: 111
+drawing pixel to: (61, 24)
+drawing pixel to: (62, 25)
+drawing pixel to: (63, 26)
+drawing pixel to: (0, 27)
+drawing frame: 112
+drawing pixel to: (1, 28)
+drawing pixel to: (2, 29)
+drawing pixel to: (3, 30)
+drawing pixel to: (4, 31)
+drawing frame: 113
+drawing pixel to: (7, 28)
+drawing pixel to: (6, 29)
+drawing pixel to: (5, 30)
+drawing pixel to: (8, 31)
+drawing frame: 114
+drawing pixel to: (11, 28)
+drawing pixel to: (10, 29)
+drawing pixel to: (9, 30)
+drawing pixel to: (12, 31)
+drawing frame: 115
+drawing pixel to: (15, 28)
+drawing pixel to: (14, 29)
+drawing pixel to: (13, 30)
+drawing pixel to: (16, 31)
+drawing frame: 116
+drawing pixel to: (17, 28)
+drawing pixel to: (18, 29)
+drawing pixel to: (19, 30)
+drawing pixel to: (20, 31)
+drawing frame: 117
+drawing pixel to: (21, 28)
+drawing pixel to: (22, 29)
+drawing pixel to: (23, 30)
+drawing pixel to: (24, 31)
+drawing frame: 118
+drawing pixel to: (25, 28)
+drawing pixel to: (26, 29)
+drawing pixel to: (27, 30)
+drawing pixel to: (28, 31)
+drawing frame: 119
+drawing pixel to: (31, 28)
+drawing pixel to: (30, 29)
+drawing pixel to: (29, 30)
+drawing pixel to: (32, 31)
+drawing frame: 120
+drawing pixel to: (35, 28)
+drawing pixel to: (34, 29)
+drawing pixel to: (33, 30)
+drawing pixel to: (36, 31)
+drawing frame: 121
+drawing pixel to: (37, 28)
+drawing pixel to: (38, 29)
+drawing pixel to: (39, 30)
+drawing pixel to: (40, 31)
+drawing frame: 122
+drawing pixel to: (43, 28)
+drawing pixel to: (42, 29)
+drawing pixel to: (41, 30)
+drawing pixel to: (44, 31)
+drawing frame: 123
+drawing pixel to: (45, 28)
+drawing pixel to: (46, 29)
+drawing pixel to: (47, 30)
+drawing pixel to: (48, 31)
+drawing frame: 124
+drawing pixel to: (51, 28)
+drawing pixel to: (50, 29)
+drawing pixel to: (49, 30)
+drawing pixel to: (52, 31)
+drawing frame: 125
+drawing pixel to: (55, 28)
+drawing pixel to: (54, 29)
+drawing pixel to: (53, 30)
+drawing pixel to: (56, 31)
+drawing frame: 126
+drawing pixel to: (57, 28)
+drawing pixel to: (58, 29)
+drawing pixel to: (59, 30)
+drawing pixel to: (60, 31)
+drawing frame: 127
+drawing pixel to: (63, 28)
+drawing pixel to: (62, 29)
+drawing pixel to: (61, 30)
+drawing pixel to: (0, 31)
+drawing frame: 128
+exiting

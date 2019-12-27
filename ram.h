@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #define RAM_SIZE 4096
 typedef struct {
-    uint8_t *mem;
+    uint8_t mem[RAM_SIZE];
 } CHIP8_RAM;
 void loadProgramIntoRAM(FILE *romFile, uint16_t *romFileSize, CHIP8_RAM *ram);
 void loadFontsetIntoRAM(uint8_t fontset[16][5], CHIP8_RAM *ram);

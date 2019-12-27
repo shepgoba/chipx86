@@ -4,6 +4,7 @@
 #include <string.h>
 #include <time.h>
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_audio.h>
 #include "cpu.h"
 #include "ram.h"
 #include "loadrom.h"
@@ -21,9 +22,6 @@ http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#Annn
 https://stackoverflow.com
 */
 
-void cleanup(CHIP8_RAM *ram, CHIP8_DISPLAY *display) {
-    free(ram->mem);
-}
 
 int main(int argc, char *argv[]) {
     uint8_t running = 1;
@@ -49,14 +47,14 @@ int main(int argc, char *argv[]) {
     CHIP8_DISPLAY display;
     CHIP8_RAM ram;
 
-    initRAM(&ram);
-    initDisplay(&display);
-    initCPU(&cpu, &ram, &display);
-
     char *windowTitle = "CHIP8-PC Development Version 1";
     SDL_Window *window = SDL_CreateWindow(windowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 320, 0);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
+    
+    initRAM(&ram);
+    initDisplay(&display, renderer);
+    initCPU(&cpu, &ram, &display);
     uint8_t fontData[16][5] = {
         {0xF0, 0x90, 0x90, 0x90, 0xF0}, //0
         {0x20, 0x60, 0x20, 0x20, 0x70}, //1
@@ -75,14 +73,13 @@ int main(int argc, char *argv[]) {
         {0xF0, 0x80, 0xF0, 0x80, 0xF0}, //E
         {0xF0, 0x80, 0xF0, 0x80, 0x80}, //F
     };
-
-    uint8_t keys[] = {};
     /* 0x50+80 bytes of interpreter RAM are for the 0-F fontset */
     loadFontsetIntoRAM(fontData, &ram);
     loadProgramIntoRAM(romFile, &romFileSize, &ram);
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 
-    FILE *dump = fopen("debug-instruction-dump.txt", "w+");
+    FILE *dump = fopen("debug-instruction-dump.txt", "wb+");
+    FILE *dump2 = fopen("debug-registers.txt", "w+");
     while (running) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
@@ -92,18 +89,15 @@ int main(int argc, char *argv[]) {
                 handleKeypress(&e, &cpu);
             }
         }
-        executeInstructions(&cpu, dump);
-        SDL_RenderClear(renderer);
-        drawDisplay(&display, renderer);
-        SDL_RenderPresent(renderer);
+        executeInstructions(&cpu, dump, dump2);
         delayTimer(&cpu);
         SDL_Delay(1000 / targetFrameRate);
     }
     fclose(dump);
+    fclose(dump2);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     printf("exiting\n");
-    cleanup(&ram, &display);
     SDL_Quit();
     return 0;
 }

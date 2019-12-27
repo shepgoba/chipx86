@@ -1,10 +1,8 @@
 #include "display.h"
-void initDisplay(CHIP8_DISPLAY *display) {
-    for (int i = 0; i < SCREEN_HEIGHT; i++) {
-        for (int j = 0; j < SCREEN_WIDTH; j++) {
-            display->frameBuf[i][j] = 0;
-        }
-    }
+void initDisplay(CHIP8_DISPLAY *display, SDL_Renderer *renderer) {
+    display->renderer = renderer;
+    display->frameCount = 0;
+    clearScreen(display);
 }
 void clearScreen(CHIP8_DISPLAY *display) {
     for (int y = 0; y < SCREEN_HEIGHT; y++) {
@@ -13,19 +11,20 @@ void clearScreen(CHIP8_DISPLAY *display) {
         }
     }
 }
-void drawDisplay(CHIP8_DISPLAY *display, SDL_Renderer *renderer) {
-    SDL_Rect rect;
+void drawDisplay(CHIP8_DISPLAY *display) {
+    static SDL_Rect rect;
     rect.w = 10;
     rect.h = 10;
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
+    SDL_SetRenderDrawColor(display->renderer, 255, 255, 255, 255);
     for (int y = 0; y < SCREEN_HEIGHT; y++) {
         for (int x = 0; x < SCREEN_WIDTH; x++) {
             if (display->frameBuf[y][x]) {
                 rect.x = 10*x;
                 rect.y = 10*y;
-                SDL_RenderFillRect(renderer, &rect);
+                SDL_RenderFillRect(display->renderer, &rect);
             }
         }
     }
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_SetRenderDrawColor(display->renderer, 0, 0, 0, 255);
 }

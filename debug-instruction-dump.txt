@@ -1,2640 +1,1098 @@
-**************
-Will be executing instruction: 0x6a02, PC = 0x200
-DEBUG: 6,a,0,2
-**************
-**************
-Will be executing instruction: 0x6b0c, PC = 0x202
-DEBUG: 6,b,0,c
-**************
-**************
-Will be executing instruction: 0x6c3f, PC = 0x204
-DEBUG: 6,c,3,f
-**************
-**************
-Will be executing instruction: 0x6d0c, PC = 0x206
-DEBUG: 6,d,0,c
-**************
-**************
-Will be executing instruction: 0xa2ea, PC = 0x208
-DEBUG: a,2,e,a
-**************
-**************
-Will be executing instruction: 0xdab6, PC = 0x20a
-DEBUG: d,a,b,6
-**************
-**************
-Will be executing instruction: 0xdcd6, PC = 0x20c
-DEBUG: d,c,d,6
-**************
-**************
-Will be executing instruction: 0x6e00, PC = 0x20e
-DEBUG: 6,e,0,0
-**************
-**************
-Will be executing instruction: 0x22d4, PC = 0x210
-DEBUG: 2,2,d,4
-**************
-**************
-Will be executing instruction: 0xa2f2, PC = 0x2d4
-DEBUG: a,2,f,2
-**************
-**************
-Will be executing instruction: 0xfe33, PC = 0x2d6
-DEBUG: f,e,3,3
-**************
-**************
-Will be executing instruction: 0xf265, PC = 0x2d8
-DEBUG: f,2,6,5
-**************
-**************
-Will be executing instruction: 0xf129, PC = 0x2da
-DEBUG: f,1,2,9
-**************
-**************
-Will be executing instruction: 0x6414, PC = 0x2dc
-DEBUG: 6,4,1,4
-**************
-**************
-Will be executing instruction: 0x6500, PC = 0x2de
-DEBUG: 6,5,0,0
-**************
-**************
-Will be executing instruction: 0xd455, PC = 0x2e0
-DEBUG: d,4,5,5
-**************
-**************
-Will be executing instruction: 0x7415, PC = 0x2e2
-DEBUG: 7,4,1,5
-**************
-**************
-Will be executing instruction: 0xf229, PC = 0x2e4
-DEBUG: f,2,2,9
-**************
-**************
-Will be executing instruction: 0xd455, PC = 0x2e6
-DEBUG: d,4,5,5
-**************
-**************
-Will be executing instruction: 0xee, PC = 0x2e8
-DEBUG: 0,0,e,e
-**************
-**************
-Will be executing instruction: 0x6603, PC = 0x212
-DEBUG: 6,6,0,3
-**************
-**************
-Will be executing instruction: 0x6802, PC = 0x214
-DEBUG: 6,8,0,2
-**************
-**************
-Will be executing instruction: 0x6060, PC = 0x216
-DEBUG: 6,0,6,0
-**************
-**************
-Will be executing instruction: 0xf015, PC = 0x218
-DEBUG: f,0,1,5
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
-**************
-Will be executing instruction: 0xf007, PC = 0x21a
-DEBUG: f,0,0,7
-**************
-**************
-Will be executing instruction: 0x3000, PC = 0x21c
-DEBUG: 3,0,0,0
-**************
-**************
-Will be executing instruction: 0x121a, PC = 0x21e
-DEBUG: 1,2,1,a
-**************
+NEW DRAW
+11100000
+01100000
+00100000
+11100000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+10100000
+11100000
+00100000
+00100000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+01100000
+01000000
+00100000
+01000000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11100000
+00100000
+00100000
+00100000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11100000
+11100000
+00100000
+11100000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+01000000
+10100000
+11100000
+10100000
+
+NEW DRAW
+10100000
+01000000
+10100000
+10100000
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
+NEW DRAW
+11101010
+10101100
+10101010
+11101010
+
