@@ -37,7 +37,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
     for (int spriteY = 0; spriteY < spriteSize; spriteY++) {
         for (int spriteX = 0; spriteX < 8; spriteX++) {
             uint8_t bitStatus = (*(sprite + spriteY) >> (7 - spriteX)) & 1;
-            printf("(%i (%i), %i (%i)): %i\n", x, spriteX, y, spriteY, bitStatus);
+            //printf("(%i (%i), %i (%i)): %i\n", x, spriteX, y, spriteY, bitStatus);
             if (!bitStatus)
                 continue;
             uint8_t drawX, drawY;
@@ -51,7 +51,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
             } else {
                 drawX = x+spriteX;
             }
-            printf("draw: (%i, %i)\n", drawX, drawY);
+            //printf("draw: (%i, %i)\n", drawX, drawY);
             if (cpu->displayPtr->frameBuf[drawY][drawX] & bitStatus) {
                 *(cpu->VF) = 1;
             } else {
@@ -74,7 +74,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
 
     for (int cycles = 0; cycles <= 9; cycles++)
     {
-        uint16_t opcode = (ram[cpu->PC] << 8) + ram[cpu->PC + 1];
+        uint16_t opcode = (ram[cpu->PC] << 8) | ram[cpu->PC + 1];
         
         // If PC goes over ram, abort the program
         if (cpu->PC+1 > 4095) {
@@ -238,6 +238,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                 cpu->ramPtr->mem[cpu->I] = hundreds;
                 cpu->ramPtr->mem[cpu->I + 1] = tens;
                 cpu->ramPtr->mem[cpu->I + 2] = ones;
+                printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
                 for (int i = 0; i < 0xF; i++) {
                     cpu->ramPtr->mem[cpu->I + i] = cpu->reg[i];
