@@ -108,7 +108,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
     SDL_RenderPresent(renderer);
     //printf("drawing frame: %i\n", cpu->displayPtr->frameCount);
 }
-//#define DEBUG
+#define DEBUG
 void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
     uint8_t *ram = cpu->ramPtr->mem;
 
@@ -120,7 +120,7 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
         #endif
         // If PC goes over ram, abort the program
         if (cpu->PC+1 > 4095) {
-            exit(-1);
+            //exit(-1);
         }
 
         uint8_t instructionHeader = (opcode >> 12) & 0xf;
@@ -234,6 +234,8 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
             cpu->I = instructionArg1to3;
         } else if (instructionHeader == 0xB) {
             cpu->PC = instructionArg1to3 + cpu->reg[0];
+            dumpRamToFile(cpu);
+            exit(-1);
             continue;
         } else if (instructionHeader == 0xC) {
             cpu->reg[instructionArg1] = (rand() % 255) & instructionArg2to3;
@@ -290,11 +292,11 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                 cpu->ramPtr->mem[cpu->I + 2] = ones;
                 //printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
-                for (int i = 0; i < instructionArg1; i++) {
+                for (int i = 0; i <= instructionArg1; i++) {
                     cpu->ramPtr->mem[cpu->I + i] = cpu->reg[i];
                 }
             } else if (instructionArg2 == 6 && instructionArg3 == 0x5) {
-                for (int i = 0; i < instructionArg1; i++) {
+                for (int i = 0; i <= instructionArg1; i++) {
                     cpu->reg[i] = cpu->ramPtr->mem[cpu->I + i];
                 }
             }
