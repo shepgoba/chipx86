@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     SDL_Init(SDL_INIT_EVERYTHING);
     srand(time(NULL));
     if (argc < 2) {
-        puts("Usage: ./chip8 <ROM file>");
+        puts("Usage: ./chipx86 <ROM file>");
         return 1;
     }
     char *romFileName = argv[1];

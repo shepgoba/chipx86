@@ -9,6 +9,7 @@ static void dumpRamToFile(CHIP8_CPU *cpu) {
     fwrite(cpu->ramPtr->mem, 1, 4096, file);
     fclose(file);
 }
+/*
 void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display) {
     static SDL_Rect rect;
     rect.w = 10;
@@ -23,6 +24,13 @@ void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display) {
             cpu->displayPtr->frameBuf[0][k] ^= 0;
         }
     }
+}*/
+void set_pixel(CHIP8_DISPLAY *display, uint8_t x, uint8_t y, uint8_t on)
+{
+    if (on)
+        display->frameBuf[y] |= (1 << (64 - x));
+    else
+        display->frameBuf[y] &= ~(1 << (64 - x));
 }
 
 static uint8_t getSingularKeyPress(CHIP8_CPU *cpu) {
@@ -79,7 +87,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
                 continue;
             uint8_t drawX, drawY;
             if (y+spriteY > 31) {
-                drawY = spriteY;
+                drawY = spriteSize - spriteY - 1;
             } else {
                 drawY = y+spriteY;
             }
@@ -88,19 +96,22 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
             } else {
                 drawX = x+spriteX;
             }
-            //printf("draw: (%i, %i)\n", drawX, drawY);
             if (!pixelsErased) {
-                if (cpu->displayPtr->frameBuf[drawY][drawX] & bitStatus) {
+                if (cpu->displayPtr->frameBuf[drawY] >> drawX & bitStatus) {
                     *(cpu->VF) = 1;
                     pixelsErased = 1;
                 }
             }
-            //if (bitStatus) printf("drawing pixel to: (%i, %i)\n", drawX, drawY);
-            cpu->displayPtr->frameBuf[drawY][drawX] ^= bitStatus;
+            //exit(-1);
+            set_pixel(cpu->displayPtr, drawX, drawY, bitStatus);
         }
     }
     if (!pixelsErased)
         *(cpu->VF) = 0;
+
+    for (int i = 0; i < 32; i++) {
+        printf("poop 0x%llx\n", cpu->displayPtr->frameBuf[i]);
+    }
     cpu->displayPtr->frameCount++;
     SDL_Renderer *renderer = cpu->displayPtr->renderer;
     SDL_RenderClear(renderer);
@@ -108,7 +119,7 @@ void displaySprite(CHIP8_CPU *cpu, uint8_t x, uint8_t y, uint8_t spriteSize, uin
     SDL_RenderPresent(renderer);
     //printf("drawing frame: %i\n", cpu->displayPtr->frameCount);
 }
-#define DEBUG
+//#define DEBUG
 void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
     uint8_t *ram = cpu->ramPtr->mem;
 
@@ -129,21 +140,20 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
         uint8_t instructionArg3 = opcode & 0xf;
         uint16_t instructionArg1to3 = opcode & 0xfff;
         uint8_t instructionArg2to3 = opcode & 0xff;
-        /*#ifdef DEBUG
+        #ifdef DEBUG
         fprintf(dump, "**************\n");
         fprintf(dump, "Will be executing instruction: 0x%02x, PC = 0x%x\n", opcode, cpu->PC);
         fprintf(dump, "DEBUG: %x,%x,%x,%x\n", instructionHeader, instructionArg1, instructionArg2, instructionArg3);
         fprintf(dump, "**************\n");
-        #endif*/
+        #endif
+
         #ifdef DEBUG
         fprintf(dump2, "0x%02x, PC = 0x%x\n", opcode, cpu->PC);
-        for (int i = 0; i < 16; i++) {
-            //fprintf(dump2, "V%x: %i, ", i, cpu->reg[i]);
-        }
         fprintf(dump2, "I: %x", cpu->I);
         fprintf(dump2, "\n");
         fprintf(dump2, "\n");
         #endif
+
         if (instructionHeader == 0x0 && opcode <= 255) {
             if (instructionArg3 == 0x0) {
                 clearScreen(cpu->displayPtr);
@@ -254,16 +264,12 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
             free(sprite);
         } else if (instructionHeader == 0xE) {
             if (instructionArg3 == 0xE) {
-                //printf("RUNNING INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if ((cpu->KEY[cpu->reg[instructionArg1]])) {
-                    //printf("skipping instr");
                     cpu->PC += 4;
                     continue;
                 }
             } else if (instructionArg3 == 0x1) {
-                //printf("RUNNING 2 INSTRUCTION WITH ARG1: %i", instructionArg1);
                 if (!(cpu->KEY[cpu->reg[instructionArg1]])) {
-                    //printf("skipping instr 2");
                     cpu->PC += 4;
                     continue;
                 }
@@ -290,7 +296,6 @@ void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2) {
                 cpu->ramPtr->mem[cpu->I] = hundreds;
                 cpu->ramPtr->mem[cpu->I + 1] = tens;
                 cpu->ramPtr->mem[cpu->I + 2] = ones;
-                //printf("num: %i, %i, %i, %i", cpu->reg[instructionArg1], hundreds, tens, ones);
             } else if (instructionArg2 == 5 && instructionArg3 == 0x5) {
                 for (int i = 0; i <= instructionArg1; i++) {
                     cpu->ramPtr->mem[cpu->I + i] = cpu->reg[i];

@@ -12,7 +12,7 @@
 typedef struct {
     uint32_t frameCount;
     SDL_Renderer *renderer;
-    uint8_t frameBuf[SCREEN_HEIGHT][SCREEN_WIDTH];
+    uint64_t frameBuf[SCREEN_HEIGHT];
 } CHIP8_DISPLAY;
 void clearScreen(CHIP8_DISPLAY *display);
 void initDisplay(CHIP8_DISPLAY *display, SDL_Renderer *renderer);
