@@ -12,14 +12,14 @@ typedef struct {
     uint16_t PC; // Program counter
     uint16_t I; //Multi use register
     uint16_t STACK[16]; // Stack
-    uint8_t KEY[16];
 
+    uint16_t KEY; // Hold bits for each key
     // Abstractions for interpreter
     CHIP8_RAM *ramPtr;
     CHIP8_DISPLAY *displayPtr;
 } CHIP8_CPU;
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display);
-void executeInstructions(CHIP8_CPU *cpu, FILE *dump, FILE *dump2);
+void executeInstructions(CHIP8_CPU *cpu);
 void delayTimer(CHIP8_CPU *cpu);
 void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display);
 #endif

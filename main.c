@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
     CHIP8_DISPLAY display;
     CHIP8_RAM ram;
 
-    char *windowTitle = "CHIP8-PC Development Version 1";
+    char *windowTitle = "chipx86 1.0~beta1";
     SDL_Window *window = SDL_CreateWindow(windowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 320, 0);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
@@ -78,8 +78,6 @@ int main(int argc, char *argv[]) {
     loadProgramIntoRAM(romFile, &romFileSize, &ram);
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 
-    FILE *dump = fopen("debug-instruction-dump.txt", "wb+");
-    FILE *dump2 = fopen("debug-registers.txt", "w+");
     while (running) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
@@ -90,12 +88,11 @@ int main(int argc, char *argv[]) {
 
             }
         }
-        executeInstructions(&cpu, dump, dump2);
+        executeInstructions(&cpu);
         delayTimer(&cpu);
         SDL_Delay(1000 / targetFrameRate);
     }
-    fclose(dump);
-    fclose(dump2);
+
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     printf("exiting\n");
