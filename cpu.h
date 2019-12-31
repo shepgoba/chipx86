@@ -1,6 +1,9 @@
 #ifndef CPU_INCLUDE
 #define CPU_INCLUDE
 #include <stdio.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_mixer.h>
+#include <SDL2/SDL_audio.h>
 #include "ram.h"
 #include "display.h"
 typedef struct {
@@ -17,9 +20,10 @@ typedef struct {
     // Abstractions for interpreter
     CHIP8_RAM *ramPtr;
     CHIP8_DISPLAY *displayPtr;
+    SDL_AudioSpec freqSound;
 } CHIP8_CPU;
 void initCPU(CHIP8_CPU *cpu, CHIP8_RAM *ram, CHIP8_DISPLAY *display);
 void executeInstructions(CHIP8_CPU *cpu);
-void delayTimer(CHIP8_CPU *cpu);
+void handleTimers(CHIP8_CPU *cpu);
 void debugDrawKeys(CHIP8_CPU *cpu, CHIP8_DISPLAY *display);
 #endif

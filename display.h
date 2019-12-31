@@ -10,7 +10,6 @@
 #define SCREEN_HEIGHT 32
 
 typedef struct {
-    uint32_t frameCount;
     SDL_Renderer *renderer;
     uint8_t frameBuf[SCREEN_HEIGHT][SCREEN_WIDTH];
 } CHIP8_DISPLAY;

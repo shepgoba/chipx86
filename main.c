@@ -12,7 +12,7 @@
 #include "input.h"
 
 /*
-Chip8-PC
+chipx86
 (wip)
 
 Chip8 interpreter for modern computers written in C
@@ -22,14 +22,17 @@ http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#Annn
 https://stackoverflow.com
 */
 
-#define DEBUG
+#undef DEBUG
 int main(int argc, char *argv[]) {
     uint8_t running = 1;
-    const int targetFrameRate = 60;
-    SDL_Init(SDL_INIT_EVERYTHING);
+    int sample_nr = 0;
+    const int targetDelayTime = 1000 / 60;
+
+
+    SDL_Init(SDL_INIT_AUDIO|SDL_INIT_VIDEO);
     srand(time(NULL));
     if (argc < 2) {
-        puts("Usage: ./chipx86 <ROM file>");
+        printf("Usage: ./chipx86 <ROM file>\n");
         return 1;
     }
     char *romFileName = argv[1];
@@ -38,6 +41,7 @@ int main(int argc, char *argv[]) {
     uint16_t romFileSize;
 
     if (!(romFile = openROM(romFileName, &romFileSize))) {
+        printf("rom could not be loaded. exiting...\n");
         exit(-1);
     } else {
         printf("loaded rom successfully\n");
@@ -81,16 +85,20 @@ int main(int argc, char *argv[]) {
     while (running) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
-            if (e.type == SDL_QUIT) {
-                running = 0;
-            } else if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP) {
-                handleKeypress(&e, &cpu);
+            switch (e.type) {
+                case SDL_QUIT:
+                    running = 0;
+                break;
 
+                case SDL_KEYDOWN:
+                case SDL_KEYUP:
+                    handleKeypress(&e, &cpu);
+                break;
             }
         }
         executeInstructions(&cpu);
-        delayTimer(&cpu);
-        SDL_Delay(1000 / targetFrameRate);
+        handleTimers(&cpu);
+        SDL_Delay(targetDelayTime);
     }
 
     SDL_DestroyRenderer(renderer);
